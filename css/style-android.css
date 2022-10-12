@@ -1,0 +1,154 @@
+/* General style of the website */
+html{ overflow: hidden;}
+body{
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 1.3vw;
+  line-height: 1.3;
+  background-color: #F6F6F6;
+  color: #292829;
+  right: 0;
+  top: 0;
+  padding: 0;
+  overflow: hidden;
+  position: static;
+}
+
+a{ text-decoration: none; color: #292829; cursor: pointer;}
+button{ cursor: pointer;}
+
+
+.logo{
+  width: 32vw;
+  margin: 12vh 34vw 10vw 34vw;
+}
+
+h1{
+  font-family: 'Oswald';
+  font-weight: 500;
+  font-size: 8.5vw;
+  text-align: center;
+  margin-bottom: 10vw;
+}
+
+.input{
+  width: 68vw;
+  margin: 2vw 10vw;
+  padding: 5.5vw 6vw 5vw 6vw;
+  border: 0.25vw solid #E0E0E0;
+  border-radius: 2.5vw;
+  font-family: 'Montserrat';
+  font-size: 4.5vw;
+  color: #292829;
+}
+
+::placeholder { color: #696869; opacity: 1; font-weight: 300;}
+:-ms-input-placeholder { color: #696869; font-weight: 300;}
+::-ms-input-placeholder { color: #696869; font-weight: 300;}
+
+p{
+  font-size: 3.4vw;
+  text-align: center;
+  width: 80vw;
+  margin: 3.2vw 10vw 6.6vw 10vw;
+}
+
+p a{
+  color: #0A76F1;
+  text-decoration: underline;
+}
+
+button{
+  width: 80vw;
+  margin: 0 10vw;
+  background-color: #E10600;
+  border: none;
+  border-radius: 2.5vw;
+  font-size: 4.5vw;
+  padding: 4.3vw 0 4vw 0;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2vw;
+  transition: 0.12s;
+  font-family: 'Montserrat';
+}
+
+button:active{
+  transform: scale(0.97);
+}
+
+h4{
+  font-family: 'Montserrat';
+  text-align: left;
+  font-size: 4vw;
+  margin: 3vw 0 11vw 22vw;
+}
+
+.container{
+  margin: 3vw 0 3vw 10vw;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark{
+  position: absolute;
+  top: 4vw;
+  left: 0;
+  height: 7vw;
+  width: 7vw;
+  background-color: #fff;
+  border: 0.4vw solid #E0E0E0;
+  border-radius: 2vw;
+  transition: all 0.2s;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #E10600;
+  border-color: #E10600;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 2.4vw;
+  top: 1.2vw;
+  width: 1.5vw;
+  height: 3vw;
+  border: solid white;
+  border-width: 0 0.8vw 0.8vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
