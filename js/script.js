@@ -31,8 +31,8 @@ if (width > 1025) {
   });
 }
 else {
-  $("#header-logo").attr("src","./../resources/logo.webp");
-  $("#change-icon").attr("src","./../resources/change-name2.svg");
+  $("#header-logo").attr("src","./static/resources/logo.webp");
+  $("#change-icon").attr("src","./static/resources/change-name2.svg");
   $( "#header-control-right" ).on('click', function() {
     $(".menu").css("right", "-27%");
   });
